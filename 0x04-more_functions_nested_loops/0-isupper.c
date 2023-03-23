@@ -1,6 +1,8 @@
 #include "main.h"
 
-/* Returns 1 if c is uppercase, returns 0 otherwise */
+/*
+ * Returns 1 if uppercase, returns 0 otherwise
+ */
 
 int _isupper(int c)
 {
