@@ -2,16 +2,14 @@
 #include "main.h"
 
 /**
- * fizzBuzz -  Prints some numbers and fizz buzz
+ * main - entry point
  *
- * Description: A program that prints numbers from 1 to 100,
- * followed by a new line.
- * But for multiples of three, print Fizz instead of the number
- * and for the multiples of five print Buzz.
- * For numbers which are multiples of both three and five,
- * print FizzBuzz.
+ * Description: prints numbers 1 to 100,
+ * For multiples of three, print Fizz instead of the number
+ * For the multiples of five print Buzz
+ * For numbers which are multiples of both three and five print FizzBuzz.
  *
- * Result: always return 0
+ * Return: always returns 0
  *
  */
 
@@ -20,7 +18,7 @@ int main(void)
 	int i;
 
 	for (i = 0; i <= 100; i++)
-	{
+
 		if ((i % 3 == 0) && (i % 5 == 0))
 			printf("FizzBuzz");
 		else if (i % 3 == 0)
