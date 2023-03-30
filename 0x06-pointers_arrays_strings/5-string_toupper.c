@@ -8,19 +8,19 @@
   * Return: char var
   */
 
-char *string_toupper(char *p)
+char *string_toupper(char *x)
 {
-	int a = 0;
+	int length;
 
-	while (p[a])
+	length = 0;
+
+	while (x[length] != '\0')
 	{
-		if (p[a] >= 97 && p[a] <= 122)
+		if (x[length] >= 97 && x[length] <= 122)
 		{
-			p[a] -= 32;
+			x[length] = x[length] - 32;
 		}
-
-		a++;
+		length++;
 	}
-
-	return (p);
+	return (x);
 }
