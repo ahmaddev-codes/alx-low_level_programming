@@ -5,17 +5,19 @@
  *
  * @s: The string to print
  *
- * Return: The string taken as parameter
+ * Return: Return nothing
  */
 
 void _puts_recursion(char *s)
 {
-	int i;
+	_putchar(*s);
 
-	for (i = 0; s[i] != '\0'; i++)
+	if (*s == '\0')
 	{
-		_putchar(s[i]);
+		_putchar('\n');
+		return;
 	}
 
-	_putchar('\n');
+	s++;
+	_puts_recursion(s);
 }
