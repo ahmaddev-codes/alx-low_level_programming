@@ -13,7 +13,7 @@
 int main(int argc, char *argv[])
 {
 	int i;
-	long int mul = 1;
+	int mul = 1;
 
 	if (argc < 2)
 	{
@@ -28,7 +28,7 @@ int main(int argc, char *argv[])
 			mul *= atoi(argv[i]);
 		}
 
-		printf("%ld\n", mul);
+		printf("%d\n", mul);
 	}
 
 	return (0);
