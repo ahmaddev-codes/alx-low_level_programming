@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point
+ * main - multiplies two numbers
  *
  * @argc: Argument count
  * @argv: Argument vector
@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 {
 	int firstNumber, secondNumber, mul;
 
-	if (argc < 2)
+	if (argc < 3)
 	{
 		printf("Error\n");
 		return (1);
