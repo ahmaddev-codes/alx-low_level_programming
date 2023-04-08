@@ -20,8 +20,8 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 
-	firstNumber = atoi(charv[1]);
-	secondNumber = atoi(charv[2]);
+	firstNumber = atoi(argv[1]);
+	secondNumber = atoi(argv[2]);
 	mul = firstNumber * secondNumber;
 
 	printf("%d\n", mul);
