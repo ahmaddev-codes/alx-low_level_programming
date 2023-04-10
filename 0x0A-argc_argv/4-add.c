@@ -3,7 +3,7 @@
 #include <string.h>
 
 /**
- * main - Entry point
+ * main - A function that addition of positive numbers
  *
  * @argc: Argument count
  * @argv: Argument vector
@@ -11,38 +11,34 @@
  * Return: always returns 0
  */
 
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int i;
-	unsigned int j, sum = 0;
-	char *c;
+	int i, j, sum = 0;
+	char *fizzbuzz;
 
-	if (argc > 1)
-	{
-		for (i = 1; i < argc; i++)
-		{
-			c = argv[i];
-
-			for (j = 0; j < strlen(c); j++)
-			{
-				if (c[j] < 48 || c[j] > 52)
-				{
-					printf("Error\n");
-					return (1);
-				}
-			}
-
-			sum += atoi(c);
-			c++;
-		}
-
-		printf("%d\n", sum);
-	}
-
-	else
+	if (argc < 2)
 	{
 		printf("0\n");
+		return (0);
 	}
+
+	for (i = 1; argv[i]; i++)
+	{
+		j = strtol(argv[i], &fizzbuzz, 10);
+
+		if (*fizzbuzz)
+		{
+			printf("Error\n");
+			return (1);
+		}
+
+		else
+		{
+			sum += j;
+		}
+	}
+
+	printf("%d\n", sum);
 
 	return (0);
 }
