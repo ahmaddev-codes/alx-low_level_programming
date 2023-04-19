@@ -3,7 +3,7 @@
 ### [0-print_name.c](./0-print_name.c)
 Write a function that prints a name.
 
-Prototype: `void print_name(char *name, void (*f)(char *))`;
+Prototype: `void print_name(char *name, void (*f)(char *));`
 
 ```
 julien@ubuntu:~/0x0e. Function pointers$ cat 0-main.c
@@ -69,7 +69,7 @@ julien@ubuntu:~/0x0e. Function pointers$
 ### [1-array_iterator.c](./1-array_iterator.c)
 Write a function that executes a function given as a parameter on each element of an array.
 
-* Prototype: void array_iterator(int *array, size_t size, void (*action)(int));
+* Prototype: `void array_iterator(int *array, size_t size, void (*action)(int));`
 * where size is the size of the array
 * and action is a pointer to the function you need to use
 
@@ -131,12 +131,12 @@ julien@ubuntu:~//0x0e. Function pointers$
 ### [2-int_index.c](./2-int_index.c)
 Write a function that searches for an integer.
 
-* Prototype: int int_index(int *array, int size, int (*cmp)(int));
+* Prototype: `int int_index(int *array, int size, int (*cmp)(int));`
 * where size is the number of elements in the array array
 * cmp is a pointer to the function to be used to compare values
 * int_index returns the index of the first element for which the cmp function does not return 0
 * If no element matches, return -1
-* If size <= 0, return -1
+* If `size <= 0`, return `-1`
 
 ```
 julien@ubuntu:~/0x0e. Function pointers$ cat 2-main.c
@@ -210,11 +210,11 @@ Write a program that performs simple operations.
 * Usage: calc num1 operator num2
 * You can assume num1 and num2 are integers, so use the atoi function to convert them from the string input to int
 operator is one of the following:
-* +: addition
-* -: subtraction
-* *: multiplication
-* /: division
-* %: modulo
+* `+`: addition
+* `-`: subtraction
+* `*`: multiplication
+* `/`: division
+* `%`: modulo
 * The program prints the result of the operation, followed by a new line
 * You can assume that the result of all operations can be stored in an int
 * if the number of arguments is wrong, print Error, followed by a new line, and exit with the status 98
@@ -341,5 +341,5 @@ julien@ubuntu:~/0x0e. Function pointers$ ./main 21 | udcli -64 -x -o 4005f6
 julien@ubuntu:~/0x0e. Function pointers$
 ```
 
-* Note 0: je is equivalent to jz
+* Note 0: `je` is equivalent to `jz`
 * Note 1: depending on how you write your main function, and on which machine you compile your program, the opcodes (and by extension the assembly code) might be different than the above example
