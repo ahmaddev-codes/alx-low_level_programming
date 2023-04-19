@@ -203,7 +203,7 @@ julien@ubuntu:~/0x0e. Function pointers$ ./c
 julien@ubuntu:~/0x0e. Function pointers$
 ```
 
-### [3-main.c](./3-main.c) [3-op_functions.c](./3-op_functions.c) [3-get_op_func.c](./3-get_op_func.c) [3-calc.h](./3-calc.h)
+### [3-main.c](./3-main.c) || [3-op_functions.c](./3-op_functions.c) || [3-get_op_func.c](./3-get_op_func.c) || [3-calc.h](./3-calc.h)
 Write a program that performs simple operations.
 
 * You are allowed to use the standard library
@@ -299,7 +299,7 @@ julien@ubuntu:~/0x0e. Function pointers$ ./calc 1024 '%' 98
 julien@ubuntu:~/0x0e. Function pointers$
 ```
 
-[100-main_opcodes.c](./100-main_opcodes.c)
+### [100-main_opcodes.c](./100-main_opcodes.c)
 Write a program that prints the opcodes of its own main function.
 
 * Usage: ./main number_of_bytes
