@@ -33,7 +33,7 @@ julien@ubuntu:~/0x0f. variadic functions$ ./a
 julien@ubuntu:~/0x0f. variadic functions$
 ```
 
-### [1-print_numbers.c](./ 1-print_numbers.c)
+### [1-print_numbers.c](./1-print_numbers.c)
 Write a function that prints numbers, followed by a new line.
 
 * Prototype: `void print_numbers(const char *separator, const unsigned int n, ...);`
