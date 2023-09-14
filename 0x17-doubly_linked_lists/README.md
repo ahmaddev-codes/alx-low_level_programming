@@ -1,5 +1,5 @@
-# 0x017-DOUBLY_LINKED_LISTS
-## About Doubly linked lists:
+## 0x017-DOUBLY_LINKED_LISTS
+### About Doubly linked lists:
 Doubly linked list is used in referencing a previous node and a next node in the list. It is a type of linked list in which each node apart from storing its data has two links. The first link points to the previous node in the list and the second link points to the next node in the list. The first node of the list has its previous link pointing to NULL similarly the last node of the list has its next node pointing to NULL. The two links help in traversing the list in both forward as well as backward direction. The following diagram shows a doubly linked list with 3 nodes.
 
 ![Doubly linked list](https://www.geeksforgeeks.org/wp-content/uploads/gq/2014/03/DLL1.png)
