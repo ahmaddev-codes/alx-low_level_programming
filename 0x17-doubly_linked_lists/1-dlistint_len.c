@@ -6,7 +6,7 @@
  *
  * @h: The head of the doubly linked list
  *
- * Returns: Number of elements in the linked list 
+ * Return: Number of elements in the linked list
  */
 size_t dlistint_len(const dlistint_t *h)
 {
