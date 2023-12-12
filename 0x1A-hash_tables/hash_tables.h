@@ -1,5 +1,5 @@
-#ifndef _HASH_T
-#define _HASH_T
+#ifndef HASH_T
+#define HASH_T
 
 /**
  * struct hash_node_s - Node of a hash table
@@ -30,4 +30,6 @@ typedef struct hash_table_s
      hash_node_t **array;
 } hash_table_t;
 
-#endif _HASH_T
+hash_table_t *hash_table_create(unsigned long int size);
+
+#endif /* HASH_T */
