@@ -14,13 +14,5 @@
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
-	int i;
-        unsigned long int ascii_sum = 0, key_index;
-
-	for (i = 0; key[i] != '\0'; i++)
-		ascii_sum += key[i];
-
-	key_index = ascii_sum % size;
-
-        return (key_index);
+	return (hash_djb2(key) % size);
 }
