@@ -3,7 +3,8 @@
 #include <string.h>
 #include "hash_tables.h"
 
-/* key_index - gives the indes of a key
+/*
+ * key_index - gives the indes of a key
  *
  * @key: The key
  * @size: Size of the array of the Hash Table
@@ -21,5 +22,5 @@ unsigned long int key_index(const unsigned char *key, unsigned long int size)
 
 	key_index = ascii_sum % size;
 
-        return key_index;
+        return (key_index);
 }
